@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluador de Riesgo Mecánico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app-container">
+
+  <header class="header">
+    <h1>Evaluador de Riesgo Mecánico</h1>
+    <p>Priorización inteligente de mantenimiento</p>
+  </header>
+
+  <main class="main-grid">
+
+    <!-- Formulario -->
+    <section class="card">
+      <h2>Datos de la Unidad</h2>
+      <form class="form">
+        <label>
+          Kilometraje actual
+          <input type="number" placeholder="Ej. 120000">
+        </label>
+
+        <label>
+          Último mantenimiento (km)
+          <input type="number" placeholder="Ej. 90000">
+        </label>
+
+        <label>
+          Fallas recientes
+          <select>
+            <option>No</option>
+            <option>Sí</option>
+          </select>
+        </label>
+
+        <label>
+          Uso de la unidad
+          <select>
+            <option>Ligero</option>
+            <option>Medio</option>
+            <option>Intensivo</option>
+          </select>
+        </label>
+
+        <button type="button">Evaluar riesgo</button>
+      </form>
+    </section>
+
+    <!-- Resultado -->
+    <section class="card">
+      <h2>Resultado</h2>
+
+      <div class="risk-indicator high">
+        Riesgo ALTO
+      </div>
+
+      <div class="action">
+        Acción sugerida:
+        <strong>Intervenir inmediatamente</strong>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    Hackatón · Prototipo funcional
+  </footer>
+
+</div>
+
+</body>
+</html>

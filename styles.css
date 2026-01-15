@@ -1,0 +1,107 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Layout general con Grid */
+.app-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-color: #f4f6f8;
+}
+
+/* Header con Flexbox */
+.header {
+  background-color: #1e293b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grid principal */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Tarjetas */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Formulario con Flexbox */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.form input,
+.form select {
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.form button {
+  padding: 10px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Semáforo de riesgo */
+.risk-indicator {
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.low {
+  background-color: #22c55e;
+  color: white;
+}
+
+.medium {
+  background-color: #facc15;
+}
+
+.high {
+  background-color: #ef4444;
+  color: white;
+}
+
+/* Acción */
+.action {
+  font-size: 16px;
+}
+
+/* Footer */
+.footer {
+  background-color: #e5e7eb;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
