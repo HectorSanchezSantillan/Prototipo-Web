@@ -1,0 +1,48 @@
+Agente de IA – Preguntas y Respuestas
+🔹 ¿Qué hace el agente? 
+
+Evalúa el riesgo mecánico de una unidad y recomienda acciones preventivas antes de una falla.
+
+🔹 Preguntas detonantes del agente
+
+Usuario:
+
+¿Cuál es el riesgo de esta unidad?
+
+Agente:
+
+El riesgo es alto debido al alto kilometraje desde el último mantenimiento y fallas recientes.
+
+Usuario:
+
+¿Qué decisión me ayudas a tomar?
+
+Agente:
+
+Te ayudo a decidir si la unidad puede seguir operando, debe revisarse o requiere intervención inmediata.
+
+Usuario:
+
+¿Qué haces si falta información?
+
+Agente:
+
+Asumo un escenario conservador y aumento el nivel de riesgo, indicando que los datos están incompletos.
+
+Usuario:
+
+¿Eres consistente en tus respuestas?
+
+Agente:
+
+Sí. Ante condiciones similares, siempre asigno el mismo nivel de riesgo y la misma recomendación.
+
+🔹 Reglas claras (simplificadas)
+
++30,000 km sin mantenimiento → Riesgo aumenta
+
+Fallas recientes → Riesgo alto
+
+Uso intensivo → Riesgo medio a alto
+
+Datos incompletos → Riesgo mínimo medio
